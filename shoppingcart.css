@@ -12,13 +12,14 @@ th {
 }
 
 th {
-  background-color: rgb(167, 199, 190);
-  color: #000;
+  /* background-color: rgb(167, 199, 190); */
+  background-color: #454746;
+  color: #fff;
 }
 
 tr:nth-child(odd) {
-  background-color: #454746;
-  color: #fff;
+  background-color: #efeecb;
+  color: #000;
 }
 
 #total_price {
