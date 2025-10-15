@@ -1,0 +1,95 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #efe8e8;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: rgb(167, 199, 190);
+  color: #000;
+}
+
+tr:nth-child(odd) {
+  background-color: #454746;
+  color: #fff;
+}
+
+#total_price {
+  display: inline-block;
+  text-align: right;
+  padding: 0.2em;
+  margin: 0.2em;
+  border-top: 1px solid black;
+  border-bottom-style: double;
+  width: 3em;
+}
+
+#checkout {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(119, 218, 119);
+  padding: 0.6em 2em 0.3em;
+  border: none;
+  border-radius: 4px;
+  vertical-align: center;
+  font-size: 1.2em;
+  width: 15em;
+}
+
+#checkout:hover {
+  border: 1px solid;
+}
+
+#img-cart {
+  width: 30px;
+  margin-top: -0.3em;
+  margin-left: 1em;
+  border: 2px solid green;
+  border-radius: 100%;
+  padding: 0.1em;
+}
+
+.receipt-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+  align-items: center;
+}
+
+.receipt {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.receipt-grid {
+  display: grid;
+  text-align: justify;
+  grid-template-columns: 2fr 100px;
+  border: 1px dotted rgb(20, 18, 18);
+  padding: 0.5em;
+}
+.receipt-grid span {
+  line-height: 2em;
+  padding: 0.5em 0.5em 0.1em;
+}
+
+.grid-item-value {
+  text-align: right;
+}
+
+.receipt-grid .caption {
+  font-weight: 700;
+}
+
+#num_of_items,
+#tax {
+  border-bottom: 1px dotted black;
+}

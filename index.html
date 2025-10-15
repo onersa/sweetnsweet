@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="./shoppingcart.css" />
+  </head>
+  <body onload="display_all">
+    <p id="demo"></p>
+    <br />
+    <div class="receipt-container">
+      <button id="checkout" type="button">
+        Checkout <img src="checkout.png" alt="" id="img-cart" />
+      </button>
+      <div id="receipt" class="receipt">
+        <h2>Checkout Receipt</h2>
+        <div class="receipt-grid">
+          <span class="caption">Number of Items</span
+          ><span id="num_of_items" class="grid-item-value"></span>
+          <span class="caption">Subtotal</span
+          ><span id="subtotal" class="grid-item-value"></span>
+          <span class="caption">Tax</span
+          ><span id="tax" class="grid-item-value"></span>
+          <span class="caption">Total Due</span
+          ><span id="total" class="grid-item-value"></span>
+        </div>
+      </div>
+    </div>
+    <script src="./shoppingcart.js"></script>
+  </body>
+</html>
